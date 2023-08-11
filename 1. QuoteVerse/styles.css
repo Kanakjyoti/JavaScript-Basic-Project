@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(241, 245, 248);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: white;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.nav-toggle{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2rem;
+    padding-right: 20px;
+    color: rgb(73, 166, 233);
+    cursor: pointer;
+}
+.nav-toggle:hover{
+    transform: rotate(90deg);
+    padding: 20px;
+    color: rgb(17, 38, 53) ;
+}
+h1{
+    font-size: 2rem;
+    padding-left: 30px;
+    color: rgb(31, 98, 145);
+    text-shadow: 1px 2px 2px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 3px;
+
+
+}
+.links a{
+    display: block;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 1.3rem;
+    color: hsl(209, 54%, 19%);
+    letter-spacing: 2.5px;
+
+}
+.links a:hover{
+    background-color:rgb(120, 193, 245) ;
+    color:rgb(15, 103, 167) ;
+    font-weight: 600;
+}
+.links{
+    height: 0;
+    overflow: hidden;
+}
+.show-links{
+    height: auto;
+}
+
+/* slider  */
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 70%;
+    box-shadow: 2px 2px 5px 5px rgb(158, 158, 158) ;
+    text-align: center;
+    padding: 60px 10px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+}
+#quote{
+    font-size: 1.7rem;
+}
+.btn{
+    font-size: 2rem;
+    background-color: transparent;
+    border-color: transparent;
+    color:  rgb(75, 147, 198) ;
+    cursor: pointer;
+}
+.btn:hover{
+    color:  rgb(21, 50, 70)  ;
+    font-weight: 900;
+}
+.prev{
+    margin-right: 50px;
+    margin-left: 10px;
+}
+.next{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+
+@media(min-width: 800px) {
+    .nav-toggle{
+        visibility: hidden;
+    }
+    .nav-container{
+        box-shadow: 0 0 3px;
+    }
+    .links{
+        height: auto;
+        display: flex;
+        padding: 0;
+    }
+    .links a{
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .links a:hover{
+        background-color: transparent;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+    .container{
+        width: 650px ;
+    }
+    
+}
